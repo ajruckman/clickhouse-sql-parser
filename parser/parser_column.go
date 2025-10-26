@@ -879,6 +879,8 @@ func (p *Parser) parseColumnType(_ Pos) (ColumnType, error) { // nolint:funlen
 				return p.parseNestedType(ident, p.Pos())
 			case "JSON":
 				return p.parseJSONType(ident, p.Pos())
+			case "QBit":
+				return p.parseColumnTypeWithParams(ident, p.Pos())
 			default:
 				return p.parseComplexType(ident, p.Pos())
 			}
@@ -962,18 +964,9 @@ func (p *Parser) parseEnumType(name *Ident, pos Pos) (*EnumType, error) {
 }
 
 func (p *Parser) parseColumnTypeWithParams(name *Ident, pos Pos) (*TypeWithParams, error) {
-	params := make([]Literal, 0)
-	param, err := p.parseLiteral(p.Pos())
+	params, err := p.parseExprs(p.Pos())
 	if err != nil {
 		return nil, err
-	}
-	params = append(params, param)
-	for !p.lexer.isEOF() && p.tryConsumeTokenKind(TokenKindComma) != nil {
-		size, err := p.parseLiteral(p.Pos())
-		if err != nil {
-			return nil, err
-		}
-		params = append(params, size)
 	}
 
 	rightParenPos := p.Pos()

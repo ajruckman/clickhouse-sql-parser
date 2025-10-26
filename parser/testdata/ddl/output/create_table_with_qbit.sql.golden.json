@@ -1,0 +1,238 @@
+[
+  {
+    "CreatePos": 31,
+    "StatementEnd": 208,
+    "OrReplace": false,
+    "Name": {
+      "Database": {
+        "Name": "test",
+        "QuoteType": 1,
+        "NamePos": 44,
+        "NameEnd": 48
+      },
+      "Table": {
+        "Name": "vectors",
+        "QuoteType": 1,
+        "NamePos": 49,
+        "NameEnd": 56
+      }
+    },
+    "IfNotExists": false,
+    "UUID": null,
+    "OnCluster": null,
+    "TableSchema": {
+      "SchemaPos": 57,
+      "SchemaEnd": 172,
+      "Columns": [
+        {
+          "NamePos": 63,
+          "ColumnEnd": 72,
+          "Name": {
+            "Ident": {
+              "Name": "id",
+              "QuoteType": 1,
+              "NamePos": 63,
+              "NameEnd": 65
+            },
+            "DotIdent": null
+          },
+          "Type": {
+            "Name": {
+              "Name": "UInt32",
+              "QuoteType": 1,
+              "NamePos": 66,
+              "NameEnd": 72
+            }
+          },
+          "NotNull": null,
+          "Nullable": null,
+          "DefaultExpr": null,
+          "MaterializedExpr": null,
+          "AliasExpr": null,
+          "Codec": null,
+          "TTL": null,
+          "Comment": null,
+          "CompressionCodec": null
+        },
+        {
+          "NamePos": 78,
+          "ColumnEnd": 104,
+          "Name": {
+            "Ident": {
+              "Name": "vec_f32",
+              "QuoteType": 1,
+              "NamePos": 78,
+              "NameEnd": 85
+            },
+            "DotIdent": null
+          },
+          "Type": {
+            "LeftParenPos": 91,
+            "RightParenPos": 104,
+            "Name": {
+              "Name": "QBit",
+              "QuoteType": 1,
+              "NamePos": 86,
+              "NameEnd": 90
+            },
+            "Params": [
+              {
+                "Name": "Float32",
+                "QuoteType": 1,
+                "NamePos": 91,
+                "NameEnd": 98
+              },
+              {
+                "NumPos": 91,
+                "NumEnd": 104,
+                "Literal": "1536",
+                "Base": 10
+              }
+            ]
+          },
+          "NotNull": null,
+          "Nullable": null,
+          "DefaultExpr": null,
+          "MaterializedExpr": null,
+          "AliasExpr": null,
+          "Codec": null,
+          "TTL": null,
+          "Comment": null,
+          "CompressionCodec": null
+        },
+        {
+          "NamePos": 111,
+          "ColumnEnd": 136,
+          "Name": {
+            "Ident": {
+              "Name": "vec_f64",
+              "QuoteType": 1,
+              "NamePos": 111,
+              "NameEnd": 118
+            },
+            "DotIdent": null
+          },
+          "Type": {
+            "LeftParenPos": 124,
+            "RightParenPos": 136,
+            "Name": {
+              "Name": "QBit",
+              "QuoteType": 1,
+              "NamePos": 119,
+              "NameEnd": 123
+            },
+            "Params": [
+              {
+                "Name": "Float64",
+                "QuoteType": 1,
+                "NamePos": 124,
+                "NameEnd": 131
+              },
+              {
+                "NumPos": 124,
+                "NumEnd": 136,
+                "Literal": "768",
+                "Base": 10
+              }
+            ]
+          },
+          "NotNull": null,
+          "Nullable": null,
+          "DefaultExpr": null,
+          "MaterializedExpr": null,
+          "AliasExpr": null,
+          "Codec": null,
+          "TTL": null,
+          "Comment": null,
+          "CompressionCodec": null
+        },
+        {
+          "NamePos": 143,
+          "ColumnEnd": 170,
+          "Name": {
+            "Ident": {
+              "Name": "vec_bf16",
+              "QuoteType": 1,
+              "NamePos": 143,
+              "NameEnd": 151
+            },
+            "DotIdent": null
+          },
+          "Type": {
+            "LeftParenPos": 157,
+            "RightParenPos": 170,
+            "Name": {
+              "Name": "QBit",
+              "QuoteType": 1,
+              "NamePos": 152,
+              "NameEnd": 156
+            },
+            "Params": [
+              {
+                "Name": "BFloat16",
+                "QuoteType": 1,
+                "NamePos": 157,
+                "NameEnd": 165
+              },
+              {
+                "NumPos": 157,
+                "NumEnd": 170,
+                "Literal": "384",
+                "Base": 10
+              }
+            ]
+          },
+          "NotNull": null,
+          "Nullable": null,
+          "DefaultExpr": null,
+          "MaterializedExpr": null,
+          "AliasExpr": null,
+          "Codec": null,
+          "TTL": null,
+          "Comment": null,
+          "CompressionCodec": null
+        }
+      ],
+      "AliasTable": null,
+      "TableFunction": null
+    },
+    "Engine": {
+      "EnginePos": 174,
+      "EngineEnd": 208,
+      "Name": "MergeTree",
+      "Params": null,
+      "PrimaryKey": {
+        "PrimaryPos": 193,
+        "Expr": {
+          "LeftParenPos": 205,
+          "RightParenPos": 208,
+          "Items": {
+            "ListPos": 206,
+            "ListEnd": 208,
+            "HasDistinct": false,
+            "Items": [
+              {
+                "Expr": {
+                  "Name": "id",
+                  "QuoteType": 1,
+                  "NamePos": 206,
+                  "NameEnd": 208
+                },
+                "Alias": null
+              }
+            ]
+          },
+          "ColumnArgList": null
+        }
+      },
+      "PartitionBy": null,
+      "SampleBy": null,
+      "TTL": null,
+      "Settings": null,
+      "OrderBy": null
+    },
+    "SubQuery": null,
+    "HasTemporary": false,
+    "Comment": null
+  }
+]

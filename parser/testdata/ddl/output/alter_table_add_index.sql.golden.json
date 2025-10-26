@@ -307,13 +307,13 @@
                 "Base": 10
               },
               {
-                "NumPos": 460,
+                "NumPos": 453,
                 "NumEnd": 461,
                 "Literal": "2",
                 "Base": 10
               },
               {
-                "NumPos": 463,
+                "NumPos": 453,
                 "NumEnd": 464,
                 "Literal": "0",
                 "Base": 10
@@ -398,19 +398,19 @@
                 "Base": 10
               },
               {
-                "NumPos": 587,
+                "NumPos": 584,
                 "NumEnd": 592,
                 "Literal": "10000",
                 "Base": 10
               },
               {
-                "NumPos": 594,
+                "NumPos": 584,
                 "NumEnd": 595,
                 "Literal": "2",
                 "Base": 10
               },
               {
-                "NumPos": 597,
+                "NumPos": 584,
                 "NumEnd": 598,
                 "Literal": "1",
                 "Base": 10

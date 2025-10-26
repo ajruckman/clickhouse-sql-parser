@@ -4461,7 +4461,7 @@ type TypeWithParams struct {
 	LeftParenPos  Pos
 	RightParenPos Pos
 	Name          *Ident
-	Params        []Literal
+	Params        []Expr
 }
 
 func (s *TypeWithParams) Pos() Pos {

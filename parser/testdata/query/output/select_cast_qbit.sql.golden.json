@@ -1,0 +1,190 @@
+[
+  {
+    "SelectPos": 26,
+    "StatementEnd": 129,
+    "With": null,
+    "Top": null,
+    "HasDistinct": false,
+    "DistinctOn": null,
+    "SelectItems": [
+      {
+        "Expr": {
+          "CastPos": 37,
+          "Expr": {
+            "Name": {
+              "Name": "arrayMap",
+              "QuoteType": 1,
+              "NamePos": 42,
+              "NameEnd": 50
+            },
+            "Params": {
+              "LeftParenPos": 50,
+              "RightParenPos": 91,
+              "Items": {
+                "ListPos": 51,
+                "ListEnd": 90,
+                "HasDistinct": false,
+                "Items": [
+                  {
+                    "Expr": {
+                      "LeftExpr": {
+                        "Name": "x",
+                        "QuoteType": 1,
+                        "NamePos": 51,
+                        "NameEnd": 52
+                      },
+                      "Operation": "-\u003e",
+                      "RightExpr": {
+                        "Name": {
+                          "Name": "toFloat32",
+                          "QuoteType": 1,
+                          "NamePos": 56,
+                          "NameEnd": 65
+                        },
+                        "Params": {
+                          "LeftParenPos": 65,
+                          "RightParenPos": 67,
+                          "Items": {
+                            "ListPos": 66,
+                            "ListEnd": 67,
+                            "HasDistinct": false,
+                            "Items": [
+                              {
+                                "Expr": {
+                                  "Name": "x",
+                                  "QuoteType": 1,
+                                  "NamePos": 66,
+                                  "NameEnd": 67
+                                },
+                                "Alias": null
+                              }
+                            ]
+                          },
+                          "ColumnArgList": null
+                        }
+                      },
+                      "HasGlobal": false,
+                      "HasNot": false
+                    },
+                    "Alias": null
+                  },
+                  {
+                    "Expr": {
+                      "LBracePos": 70,
+                      "RBracePos": 90,
+                      "Name": {
+                        "Name": "emb",
+                        "QuoteType": 1,
+                        "NamePos": 71,
+                        "NameEnd": 74
+                      },
+                      "Type": {
+                        "LeftParenPos": 82,
+                        "RightParenPos": 89,
+                        "Name": {
+                          "Name": "Array",
+                          "QuoteType": 1,
+                          "NamePos": 76,
+                          "NameEnd": 81
+                        },
+                        "Params": [
+                          {
+                            "Name": {
+                              "Name": "Float32",
+                              "QuoteType": 1,
+                              "NamePos": 82,
+                              "NameEnd": 89
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "Alias": null
+                  }
+                ]
+              },
+              "ColumnArgList": null
+            }
+          },
+          "Separator": "AS",
+          "AsPos": 93,
+          "AsType": {
+            "LeftParenPos": 101,
+            "RightParenPos": 114,
+            "Name": {
+              "Name": "QBit",
+              "QuoteType": 1,
+              "NamePos": 96,
+              "NameEnd": 100
+            },
+            "Params": [
+              {
+                "Name": "Float32",
+                "QuoteType": 1,
+                "NamePos": 101,
+                "NameEnd": 108
+              },
+              {
+                "NumPos": 101,
+                "NumEnd": 114,
+                "Literal": "1536",
+                "Base": 10
+              }
+            ]
+          }
+        },
+        "Modifiers": [],
+        "Alias": null
+      },
+      {
+        "Expr": {
+          "Name": {
+            "Name": "now64",
+            "QuoteType": 1,
+            "NamePos": 122,
+            "NameEnd": 127
+          },
+          "Params": {
+            "LeftParenPos": 127,
+            "RightParenPos": 129,
+            "Items": {
+              "ListPos": 128,
+              "ListEnd": 129,
+              "HasDistinct": false,
+              "Items": [
+                {
+                  "Expr": {
+                    "NumPos": 128,
+                    "NumEnd": 129,
+                    "Literal": "3",
+                    "Base": 10
+                  },
+                  "Alias": null
+                }
+              ]
+            },
+            "ColumnArgList": null
+          }
+        },
+        "Modifiers": [],
+        "Alias": null
+      }
+    ],
+    "From": null,
+    "ArrayJoin": null,
+    "Window": null,
+    "Prewhere": null,
+    "Where": null,
+    "GroupBy": null,
+    "WithTotal": false,
+    "Having": null,
+    "OrderBy": null,
+    "LimitBy": null,
+    "Limit": null,
+    "Settings": null,
+    "Format": null,
+    "UnionAll": null,
+    "UnionDistinct": null,
+    "Except": null
+  }
+]

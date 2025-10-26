@@ -501,13 +501,13 @@
                 "Base": 10
               },
               {
-                "NumPos": 508,
+                "NumPos": 501,
                 "NumEnd": 509,
                 "Literal": "2",
                 "Base": 10
               },
               {
-                "NumPos": 511,
+                "NumPos": 501,
                 "NumEnd": 512,
                 "Literal": "0",
                 "Base": 10
@@ -558,19 +558,19 @@
                 "Base": 10
               },
               {
-                "NumPos": 573,
+                "NumPos": 570,
                 "NumEnd": 578,
                 "Literal": "10000",
                 "Base": 10
               },
               {
-                "NumPos": 580,
+                "NumPos": 570,
                 "NumEnd": 581,
                 "Literal": "2",
                 "Base": 10
               },
               {
-                "NumPos": 583,
+                "NumPos": 570,
                 "NumEnd": 584,
                 "Literal": "1",
                 "Base": 10

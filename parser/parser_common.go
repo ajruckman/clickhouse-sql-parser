@@ -402,6 +402,23 @@ func (p *Parser) wrapError(err error) error {
 	return errors.New(buf.String())
 }
 
+func (p *Parser) parseExprs(pos Pos) ([]Expr, error) {
+	var exprs []Expr
+
+	for !p.lexer.isEOF() && p.lastTokenKind() != TokenKindRParen {
+		expr, err := p.parseExpr(pos)
+		if err != nil {
+			return nil, err
+		}
+		exprs = append(exprs, expr)
+		if p.tryConsumeTokenKind(TokenKindComma) == nil {
+			break
+		}
+	}
+
+	return exprs, nil
+}
+
 func (p *Parser) parseRatioExpr(pos Pos) (*RatioExpr, error) {
 	numerator, err := p.parseNumber(pos)
 	if err != nil {
